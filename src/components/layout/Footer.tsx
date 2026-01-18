@@ -1,5 +1,5 @@
+import { Facebook, Globe, Leaf, Linkedin, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Leaf, Mail, Phone, Globe, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -14,17 +14,22 @@ export const Footer = () => {
                 <Leaf className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-background">Rural Agro Foundation</h3>
+                <h3 className="text-lg font-bold text-background">
+                  Rural Agro Foundation
+                </h3>
               </div>
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
-              Empowering rural communities through sustainable agriculture, farmer training, and socio-economic development in Bangladesh.
+              Empowering rural communities through sustainable agriculture,
+              farmer training, and socio-economic development in Bangladesh.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-background">Quick Links</h4>
+            <h4 className="text-base font-semibold mb-4 text-background">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
               {[
                 { name: "About Us", path: "/about" },
@@ -47,7 +52,9 @@ export const Footer = () => {
 
           {/* Programs */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-background">Our Programs</h4>
+            <h4 className="text-base font-semibold mb-4 text-background">
+              Our Programs
+            </h4>
             <ul className="space-y-2">
               {[
                 "Sustainable Agriculture",
@@ -70,7 +77,9 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-background">Contact Us</h4>
+            <h4 className="text-base font-semibold mb-4 text-background">
+              Contact Us
+            </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 mt-0.5 text-primary" />
@@ -84,11 +93,17 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-0.5 text-primary" />
                 <div className="text-background/70 text-sm">
-                  <a href="tel:+8801715588168" className="hover:text-background block transition-colors">
-                    ০১৭১৫৫৮৮১৬৮
+                  <a
+                    href="tel:+8801715588168"
+                    className="hover:text-background block transition-colors"
+                  >
+                    0171588168
                   </a>
-                  <a href="tel:+8801719753431" className="hover:text-background block transition-colors">
-                    ০১৭১৯৭৫৩৪৩১
+                  <a
+                    href="tel:+8801719753431"
+                    className="hover:text-background block transition-colors"
+                  >
+                    01719753431
                   </a>
                 </div>
               </li>
@@ -106,7 +121,18 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Linkedin className="w-4 h-4 mt-0.5 text-primary" />
                 <a
-                  href="https://www.linkedin.com/company/rural-agro-foundation"
+                  href="https://www.linkedin.com/company/rural-agro-foundation/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/70 hover:text-background text-sm transition-colors"
+                >
+                  Rural Agro Foundation
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Facebook className="w-4 h-4 mt-0.5 text-primary" />
+                <a
+                  href="https://www.facebook.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-background/70 hover:text-background text-sm transition-colors"
@@ -124,7 +150,8 @@ export const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-background/60 text-sm text-center md:text-left">
-              © {new Date().getFullYear()} Rural Agro Foundation. All rights reserved.
+              © {new Date().getFullYear()} Rural Agro Foundation. All rights
+              reserved.
             </p>
             <div className="flex items-center gap-4 text-sm">
               <span className="text-background/60">
