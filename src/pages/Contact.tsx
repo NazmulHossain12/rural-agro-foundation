@@ -1,6 +1,14 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, Globe, Linkedin, MapPin, Send } from "lucide-react";
+import {
+  Facebook,
+  Globe,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+} from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
@@ -17,7 +25,11 @@ const Contact = () => {
     console.log("Form submitted:", formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -34,7 +46,8 @@ const Contact = () => {
               Contact Us
             </h1>
             <p className="text-xl text-primary-foreground/80">
-              Get in touch with Rural Agro Foundation. We'd love to hear from you.
+              Get in touch with Rural Agro Foundation. We'd love to hear from
+              you.
             </p>
           </div>
         </div>
@@ -50,7 +63,9 @@ const Contact = () => {
                 Get In Touch
               </h2>
               <p className="text-muted-foreground mb-8">
-                Whether you have questions about our programs, want to explore partnership opportunities, or wish to make a donation, our team is here to help.
+                Whether you have questions about our programs, want to explore
+                partnership opportunities, or wish to make a donation, our team
+                is here to help.
               </p>
 
               <div className="space-y-6">
@@ -59,7 +74,9 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Email
+                    </h3>
                     <a
                       href="mailto:info@ruralagrofoundation.org"
                       className="text-muted-foreground hover:text-primary transition-colors"
@@ -74,19 +91,21 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Phone</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Phone
+                    </h3>
                     <div className="space-y-1">
                       <a
                         href="tel:+8801715588168"
                         className="block text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ০১৭১৫৫৮৮১৬৮
+                        01715588168
                       </a>
                       <a
                         href="tel:+8801719753431"
                         className="block text-muted-foreground hover:text-primary transition-colors"
                       >
-                        ০১৭১৯৭৫৩৪৩১
+                        01719753431
                       </a>
                     </div>
                   </div>
@@ -97,7 +116,9 @@ const Contact = () => {
                     <Globe className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Website</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Website
+                    </h3>
                     <a
                       href="https://www.ruralagrofoundation.org"
                       target="_blank"
@@ -114,9 +135,30 @@ const Contact = () => {
                     <Linkedin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">LinkedIn</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      LinkedIn
+                    </h3>
                     <a
-                      href="https://www.linkedin.com/company/rural-agro-foundation"
+                      href="https://www.linkedin.com/company/rural-agro-foundation/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      Rural Agro Foundation
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                    <Facebook className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Facebook
+                    </h3>
+                    <a
+                      href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
@@ -131,7 +173,9 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Location</h3>
+                    <h3 className="font-semibold text-foreground mb-1">
+                      Location
+                    </h3>
                     <p className="text-muted-foreground">Bangladesh</p>
                   </div>
                 </div>
@@ -145,7 +189,10 @@ const Contact = () => {
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Your Name *
                   </label>
                   <input
@@ -161,7 +208,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Email Address *
                   </label>
                   <input
@@ -177,7 +227,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Subject *
                   </label>
                   <select
@@ -198,7 +251,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Message *
                   </label>
                   <textarea
@@ -213,7 +269,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="default" size="lg" className="w-full gap-2">
+                <Button
+                  type="submit"
+                  variant="default"
+                  size="lg"
+                  className="w-full gap-2"
+                >
                   Send Message
                   <Send className="w-5 h-5" />
                 </Button>
@@ -231,7 +292,8 @@ const Contact = () => {
               Working Across Rural Bangladesh
             </h2>
             <p className="text-muted-foreground mb-8">
-              Our programs span multiple districts, reaching communities in Rajshahi, Mymensingh, Rangpur, Khulna, and beyond.
+              Our programs span multiple districts, reaching communities in
+              Rajshahi, Mymensingh, Rangpur, Khulna, and beyond.
             </p>
             <div className="bg-card rounded-2xl h-64 flex items-center justify-center border border-border">
               <p className="text-muted-foreground">
