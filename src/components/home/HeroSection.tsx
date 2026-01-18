@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import heroImage from "@/assets/hero-farmers.jpg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-farmers.jpg";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
@@ -17,7 +17,7 @@ export const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto p-4 relative z-10">
         <div className="max-w-2xl">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/20 text-primary-foreground text-sm font-medium mb-6 backdrop-blur-sm border border-primary-foreground/20">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
@@ -29,7 +29,9 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 leading-relaxed">
-            Building resilient farming communities, ensuring food security, and creating pathways to prosperity for millions of farmers across Bangladesh.
+            Building resilient farming communities, ensuring food security, and
+            creating pathways to prosperity for millions of farmers across
+            Bangladesh.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -49,7 +51,9 @@ export const HeroSection = () => {
 
           {/* Trust Indicators */}
           <div className="mt-12 pt-8 border-t border-primary-foreground/20">
-            <p className="text-primary-foreground/60 text-sm mb-3">Aligned with UN Sustainable Development Goals</p>
+            <p className="text-primary-foreground/60 text-sm mb-3">
+              Aligned with UN Sustainable Development Goals
+            </p>
             <div className="flex items-center gap-4">
               {["SDG 1", "SDG 2", "SDG 5", "SDG 13"].map((sdg) => (
                 <span
