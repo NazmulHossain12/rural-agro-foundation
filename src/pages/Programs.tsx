@@ -1,54 +1,77 @@
-import { Layout } from "@/components/layout/Layout";
-import { Leaf, GraduationCap, Apple, Cloud, Users, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import farmerCropsImage from "@/assets/farmer-crops.jpg";
+import { Layout } from "@/components/layout/Layout";
+import { Button } from "@/components/ui/button";
+import {
+  Apple,
+  ArrowRight,
+  Cloud,
+  GraduationCap,
+  Leaf,
+  Users,
+} from "lucide-react";
+import { Link } from "react-router-dom";
 
 const programs = [
   {
     id: "sustainable-agriculture",
     icon: Leaf,
     title: "Sustainable Agriculture Development",
-    problem: "Traditional farming practices often lead to soil degradation, water waste, and low yields, trapping farmers in cycles of poverty.",
-    intervention: "We introduce integrated farming systems, organic practices, crop diversification, and efficient irrigation techniques that boost productivity while preserving natural resources.",
-    beneficiaries: "Smallholder farmers, farming cooperatives, rural communities",
-    outcomes: "30% increase in crop yields, reduced input costs, improved soil health, and enhanced biodiversity.",
+    problem:
+      "Traditional farming practices often lead to soil degradation, water waste, and low yields, trapping farmers in cycles of poverty.",
+    intervention:
+      "We introduce integrated farming systems, organic practices, crop diversification, and efficient irrigation techniques that boost productivity while preserving natural resources.",
+    beneficiaries:
+      "Smallholder farmers, farming cooperatives, rural communities",
+    outcomes:
+      "30% increase in crop yields, reduced input costs, improved soil health, and enhanced biodiversity.",
   },
   {
     id: "farmer-training",
     icon: GraduationCap,
     title: "Farmer Training & Capacity Building",
-    problem: "Many farmers lack access to modern agricultural knowledge, limiting their ability to improve practices and income.",
-    intervention: "Comprehensive training programs covering improved cultivation techniques, pest management, post-harvest handling, financial literacy, and market access.",
+    problem:
+      "Many farmers lack access to modern agricultural knowledge, limiting their ability to improve practices and income.",
+    intervention:
+      "Comprehensive training programs covering improved cultivation techniques, pest management, post-harvest handling, financial literacy, and market access.",
     beneficiaries: "Farmers, agricultural extension workers, community leaders",
-    outcomes: "Enhanced skills for 10,000+ farmers annually, improved farm management, and increased market participation.",
+    outcomes:
+      "Enhanced skills for 10,000+ farmers annually, improved farm management, and increased market participation.",
   },
   {
     id: "food-security",
     icon: Apple,
     title: "Food Security & Nutrition",
-    problem: "Rural households face seasonal food shortages and nutritional deficiencies, particularly affecting women and children.",
-    intervention: "Homestead gardening programs, nutritional education, food preservation training, and establishing community seed banks.",
+    problem:
+      "Rural households face seasonal food shortages and nutritional deficiencies, particularly affecting women and children.",
+    intervention:
+      "Homestead gardening programs, nutritional education, food preservation training, and establishing community seed banks.",
     beneficiaries: "Rural households, women, children under 5",
-    outcomes: "Year-round food availability, improved dietary diversity, and reduced malnutrition rates.",
+    outcomes:
+      "Year-round food availability, improved dietary diversity, and reduced malnutrition rates.",
   },
   {
     id: "climate-resilience",
     icon: Cloud,
     title: "Climate-Resilient Farming",
-    problem: "Climate change threatens agriculture through unpredictable weather, flooding, drought, and new pest patterns.",
-    intervention: "Climate-smart agricultural practices, drought-resistant varieties, flood-adaptive farming, early warning systems, and disaster preparedness training.",
+    problem:
+      "Climate change threatens agriculture through unpredictable weather, flooding, drought, and new pest patterns.",
+    intervention:
+      "Climate-smart agricultural practices, drought-resistant varieties, flood-adaptive farming, early warning systems, and disaster preparedness training.",
     beneficiaries: "Farmers in climate-vulnerable areas, coastal communities",
-    outcomes: "Increased adaptive capacity, reduced crop losses, and sustainable livelihoods despite climate challenges.",
+    outcomes:
+      "Increased adaptive capacity, reduced crop losses, and sustainable livelihoods despite climate challenges.",
   },
   {
     id: "women-youth",
     icon: Users,
     title: "Women & Youth Empowerment",
-    problem: "Women and youth face barriers to agricultural leadership, land access, and economic opportunities.",
-    intervention: "Women farmer groups, youth agricultural training, entrepreneurship support, leadership development, and access to resources and markets.",
+    problem:
+      "Women and youth face barriers to agricultural leadership, land access, and economic opportunities.",
+    intervention:
+      "Women farmer groups, youth agricultural training, entrepreneurship support, leadership development, and access to resources and markets.",
     beneficiaries: "Rural women, young farmers, women-headed households",
-    outcomes: "Increased women's participation in agriculture, youth engagement, and economic independence.",
+    outcomes:
+      "Increased women's participation in agriculture, youth engagement, and economic independence.",
   },
 ];
 
@@ -63,7 +86,8 @@ const Programs = () => {
               Our Programs
             </h1>
             <p className="text-xl text-primary-foreground/80">
-              Integrated interventions that address the root causes of rural poverty and create pathways to sustainable prosperity.
+              Integrated interventions that address the root causes of rural
+              poverty and create pathways to sustainable prosperity.
             </p>
           </div>
         </div>
@@ -111,24 +135,38 @@ const Programs = () => {
                   {/* Details */}
                   <div className="lg:col-span-2 space-y-6">
                     <div className="bg-background rounded-xl p-6 border border-border">
-                      <h3 className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">The Problem</h3>
+                      <h3 className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
+                        The Problem
+                      </h3>
                       <p className="text-muted-foreground">{program.problem}</p>
                     </div>
 
                     <div className="bg-background rounded-xl p-6 border border-border">
-                      <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-2">Our Intervention</h3>
-                      <p className="text-muted-foreground">{program.intervention}</p>
+                      <h3 className="text-sm font-semibold text-secondary uppercase tracking-wide mb-2">
+                        Our Intervention
+                      </h3>
+                      <p className="text-muted-foreground">
+                        {program.intervention}
+                      </p>
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="bg-accent/30 rounded-xl p-6">
-                        <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-2">Beneficiaries</h3>
-                        <p className="text-muted-foreground text-sm">{program.beneficiaries}</p>
+                        <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-2">
+                          Beneficiaries
+                        </h3>
+                        <p className="text-muted-foreground text-sm">
+                          {program.beneficiaries}
+                        </p>
                       </div>
 
                       <div className="bg-primary/10 rounded-xl p-6">
-                        <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-2">Expected Outcomes</h3>
-                        <p className="text-muted-foreground text-sm">{program.outcomes}</p>
+                        <h3 className="text-sm font-semibold text-foreground uppercase tracking-wide mb-2">
+                          Expected Outcomes
+                        </h3>
+                        <p className="text-muted-foreground text-sm">
+                          {program.outcomes}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -147,7 +185,8 @@ const Programs = () => {
               Support Our Programs
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Your contribution helps us expand these life-changing programs to more communities across Bangladesh.
+              Your contribution helps us expand these life-changing programs to
+              more communities across Bangladesh.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="default" size="xl" asChild>
@@ -156,7 +195,7 @@ const Programs = () => {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="xl" asChild>
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>

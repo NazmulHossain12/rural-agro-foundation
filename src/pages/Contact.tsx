@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
+import OfficeMap from "@/components/ui/office-map";
 import {
   Facebook,
   Globe,
@@ -99,13 +100,13 @@ const Contact = () => {
                         href="tel:+8801715588168"
                         className="block text-muted-foreground hover:text-primary transition-colors"
                       >
-                        01715588168
+                        +8801715588168
                       </a>
                       <a
                         href="tel:+8801719753431"
                         className="block text-muted-foreground hover:text-primary transition-colors"
                       >
-                        01719753431
+                        +8801719753431
                       </a>
                     </div>
                   </div>
@@ -158,7 +159,7 @@ const Contact = () => {
                       Facebook
                     </h3>
                     <a
-                      href="https://www.facebook.com"
+                      href="https://www.facebook.com/RuralAgroFoundation"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-muted-foreground hover:text-primary transition-colors"
@@ -176,7 +177,9 @@ const Contact = () => {
                     <h3 className="font-semibold text-foreground mb-1">
                       Location
                     </h3>
-                    <p className="text-muted-foreground">Bangladesh</p>
+                    <p className="text-muted-foreground">
+                      Kujipukur, Dokkhinpara, Raksha, Lalpur, Natore
+                    </p>
                   </div>
                 </div>
               </div>
@@ -296,9 +299,7 @@ const Contact = () => {
               Rajshahi, Mymensingh, Rangpur, Khulna, and beyond.
             </p>
             <div className="bg-card rounded-2xl h-64 flex items-center justify-center border border-border">
-              <p className="text-muted-foreground">
-                Interactive map coming soon
-              </p>
+              <OfficeMap />
             </div>
           </div>
         </div>

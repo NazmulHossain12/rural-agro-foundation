@@ -1,5 +1,7 @@
-import { Facebook, Globe, Leaf, Linkedin, Mail, Phone } from "lucide-react";
+import { Facebook, Globe, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+
+import Logo from "../../../public/logo.png";
 
 export const Footer = () => {
   return (
@@ -10,8 +12,8 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-primary-foreground" />
+              <div className="bg-white rounded-md p-2 flex items-center justify-center">
+                <img src={Logo} alt="Rural Agro Foundation" className="h-10" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-background">
@@ -80,7 +82,16 @@ export const Footer = () => {
             <h4 className="text-base font-semibold mb-4 text-background">
               Contact Us
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-3 w-[90%]">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                <a
+                  href="mailto:info@ruralagrofoundation.org"
+                  className="text-background/70 hover:text-background text-sm transition-colors"
+                >
+                  Kujipukur, Dokkhinpara, Raksha, Lalpur, Natore
+                </a>
+              </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4 h-4 mt-0.5 text-primary" />
                 <a
@@ -97,13 +108,13 @@ export const Footer = () => {
                     href="tel:+8801715588168"
                     className="hover:text-background block transition-colors"
                   >
-                    0171588168
+                    +8801715588168
                   </a>
                   <a
                     href="tel:+8801719753431"
                     className="hover:text-background block transition-colors"
                   >
-                    01719753431
+                    +8801719753431
                   </a>
                 </div>
               </li>
@@ -132,7 +143,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Facebook className="w-4 h-4 mt-0.5 text-primary" />
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/RuralAgroFoundation"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-background/70 hover:text-background text-sm transition-colors"

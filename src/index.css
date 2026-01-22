@@ -135,6 +135,12 @@ All colors MUST be HSL.
     --shadow-xl: 0 20px 30px -10px hsl(0 0% 0% / 0.35);
     --shadow-2xl: 0 25px 50px -12px hsl(0 0% 0% / 0.5);
   }
+  .maplibregl-popup-content {
+    @apply bg-transparent! shadow-none! p-0! rounded-none!;
+  }
+  .maplibregl-popup-tip {
+    @apply hidden!;
+  }
 }
 
 @layer base {
